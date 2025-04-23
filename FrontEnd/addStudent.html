@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="addStudent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="addStudent.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="Assets/icons/logo.png" alt="" />
+        <h1>UniMana</h1>
+      </div>
+      <nav class="nav-container">
+        <a href="/FrontEnd/students.html">Students</a>
+        <a href="/FrontEnd/addStudent.html">Add Student</a>
+        <a href="/FrontEnd/universities.html">Universities</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Add Student To A University</h1>
+       <form id="student-form">
+        <div class="input-container">
+          <label for="name">Name</label>
+          <select name="student" id="student" required>
+            <option value="">Select</option>
+            <option value="student1">Student 1</option>
+            <option value="student2">Student 2</option>
+            
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="university">University</label>
+          <select id="university" name="university" required>
+            <option value="">Select</option>
+          </select>
+        </div>
+        <button type="submit">Add Student</button>
+      </form>
+    </main>
+  </body>
+</html>

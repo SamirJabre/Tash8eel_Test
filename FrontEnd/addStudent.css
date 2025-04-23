@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+}
+.logo-container {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-container {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: gray;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  padding: 2% 5%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+main h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#student-form {
+  width: 100%;
+  height: fit-content;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(184, 184, 184);
+  border-radius: 5px;
+}
+.input-container label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.input-container select {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#student-form button{
+  width: 100%;
+  height: 40px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #0056b3;
+  }
+}

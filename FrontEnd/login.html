@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-image-container">
+        <img src="Assets/images/login-img.png" alt="" />
+      </div>
+
+      <div class="login-form-container">
+        <div class="title-logo">
+          <img src="Assets/icons/logo.png" alt="" />
+          <h1>UniMana</h1>
+        </div>
+        <form method="post" id="login-form">
+          <label for="email-input">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email-input"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="password-input">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password-input"
+            placeholder="Enter your password"
+            required
+          />
+          <div class="remember-me-box">
+            <input
+              type="checkbox"
+              name="remember-me"
+              id="remember-me"
+              value="remember-me"
+            />
+            <label for="remember-me">Remember Me</label>
+          </div>
+          <button type="submit" class="login-button" id="login-button">
+            Log In
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
